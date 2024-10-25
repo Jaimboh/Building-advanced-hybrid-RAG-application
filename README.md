@@ -4,18 +4,18 @@ In this guide, we'll build an advanced Retrieval-Augmented Generation (RAG) pipe
 
 ## Prerequisites
 
-This tutorial builds upon  [this resource here](https://github.com/daveebbelaar/pgvectorscale-rag-solution/tree/setup) on setting up Pgvectorscale to build a high-performance RAG system. Before diving into this, make sure you’ve completed that setup, as it lays the foundation for the steps we’ll take here. In this repository, each branch contains a different, but related tutorial, so feel free to explore them as you progress.
+This tutorial builds upon  [this resource here](https://github.com/daveebbelaar/pgvectorscale-rag-solution/tree/setup) on setting up Pgvectorscale to build a high-performance RAG system. Before diving into this, make sure you’ve completed that setup, as it lays the foundation for the steps we’ll take here. In this repository, each branch contains a different, but related tutorial, so feel free to explore them as you progress and this is the [dataset](https://huggingface.co/datasets/ccdv/cnn_dailymail) used for this demo
 
 - Docker
 - Python 3.7+
 - OpenAI API key
-- PostgreSQL GUI client
+- PostgreSQL GUI client (PG Admin)
 - Cohere API key (optional, for reranking)
 
 ## Steps
 
 1. Set up Docker environment
-2. Connect to the database using a PostgreSQL GUI client (I use TablePlus)
+2. Connect to the database using a PostgreSQL GUI client (I use PG Admin)
 3. Create a new virtual Python environment and install the `requirements.txt`
 4. Create a Python script to insert document as vectors using OpenAI embeddings
 5. Create a Python function to perform similarity search
